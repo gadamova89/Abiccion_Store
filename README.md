@@ -95,11 +95,11 @@ http://localhost/Abiccion_Store
 
 ## 👤 Credenciales por defecto
 
-| Rol | Usuario | Contraseña | Acceso |
-|-----|---------|-----------|--------|
-| Admin | admin@example.com | admin123 | `/dashboard` |
+| Rol      | Usuario              | Contraseña  | Acceso       |
+| -------- | -------------------- | ----------- | ------------ |
+| Admin    | admin@example.com    | admin123    | `/dashboard` |
 | Vendedor | vendedor@example.com | vendedor123 | `/dashboard` |
-| Cliente | cliente@example.com | cliente123 | Home |
+| Cliente  | cliente@example.com  | cliente123  | Home         |
 
 **⚠️ Nota:** Cambia las contraseñas en producción.
 
@@ -129,16 +129,19 @@ DB_NAME=abiccion_store
 ## 🚀 Uso
 
 ### Para Administradores
+
 - Gestionar categorías y productos
 - Controlar usuarios (clientes y personal)
 - Ver estadísticas en el dashboard
 
 ### Para Vendedores
+
 - Crear y editar sus productos
 - Gestionar inventario
 - Ver órdenes relacionadas
 
 ### Para Clientes
+
 - Navegar catálogo
 - Buscar por categoría
 - Añadir al carrito
@@ -153,29 +156,32 @@ DB_NAME=abiccion_store
 
 ## 📝 API Endpoints
 
-| Método | Ruta | Descripción |
-|--------|------|-------------|
-| GET | `/` | Home |
-| GET | `/login` | Página de login |
-| POST | `/login` | Procesar login |
-| GET | `/dashboard` | Dashboard del usuario |
-| GET | `/productos` | Listado de productos |
-| POST | `/productos` | Crear producto |
-| GET | `/categorias` | Gestión de categorías |
+| Método | Ruta          | Descripción           |
+| ------ | ------------- | --------------------- |
+| GET    | `/`           | Home                  |
+| GET    | `/login`      | Página de login       |
+| POST   | `/login`      | Procesar login        |
+| GET    | `/dashboard`  | Dashboard del usuario |
+| GET    | `/productos`  | Listado de productos  |
+| POST   | `/productos`  | Crear producto        |
+| GET    | `/categorias` | Gestión de categorías |
 
 ## 🐛 Solución de problemas
 
 ### "No se conecta a la BD"
+
 - Verifica que MySQL esté corriendo
 - Comprueba credenciales en `app/config/config.php`
 - Confirma que la BD existe
 
 ### "API Key no válida"
+
 - Obtén una clave en [OpenRouter](https://openrouter.ai)
 - Actualiza `.env` con la clave correcta
 - Reinicia la aplicación
 
 ### "Permisos de carpeta"
+
 ```bash
 chmod -R 755 uploads/
 chmod -R 755 public/assets/
@@ -189,16 +195,6 @@ chmod -R 755 public/assets/
 ## 📄 Licencia
 
 Este proyecto es de uso privado/educativo.
-
-## 🤝 Contribuciones
-
-Las contribuciones son bienvenidas. Por favor:
-
-1. Fork el proyecto
-2. Crea una rama (`git checkout -b feature/AmazingFeature`)
-3. Commit cambios (`git commit -m 'Add AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
 
 ---
 
